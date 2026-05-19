@@ -5,7 +5,6 @@
 > Wei Li, Shenwang Li, Yuyang Zhou, Yunwei Zhang, Junlong Deng, Zhenkang Zhang, Li Liu, and Thomas Wu  
 > IEEE IAS Publications in Peer Review
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv-blue)](https://arxiv.org/)
 [![License](https://img.shields.io/badge/License-MIT-green)](#-license)
 [![Dataset](https://img.shields.io/badge/Dataset-CC%20BY%204.0-orange)](#-dataset)
 
@@ -34,6 +33,13 @@ This work proposes a unified framework that integrates:
 > - Only the **validation set** is provided here for reviewer access.  
 > - Full dataset (training + test splits) will be released upon paper publication.
 
+
+## 📊 Framework Overview
+
+![Framework](Figures/graph.png)
+
+# Quick Start
+
 ## 📥 Download Dataset
 
 Clone this repository to download the validation set locally:
@@ -43,9 +49,6 @@ git clone https://github.com/Welllee12366/IAS-26-ESC-0712.git
 cd IAS-26-ESC-0712
 ```
 
-## 📊 Framework Overview
-
-![Framework](Figures/graph.png)
 
 ## 📁 Project Structure
 
