@@ -1,0 +1,7 @@
+train: ../extreme/train/images
+val: ../extreme/val/images
+test: ../extreme/test/images
+
+nc: 7
+names: ['burning', 'crack', 'deformity', 'dirt', 'oil', 'peeling', 'rusty']
+

@@ -1,0 +1,7 @@
+train: ../original/train/images
+val: ../original/val/images
+test: ../original/test/images
+
+nc: 7
+names: ['burning', 'crack', 'deformity', 'dirt', 'oil', 'peeling', 'rusty']
+
