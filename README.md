@@ -38,9 +38,6 @@ This work proposes a unified framework that integrates:
 
 ![Framework](Figures/graph.png)
 
-## 📈 Dataset Class Distribution
-
-![Class Distribution](Figures/labels.jpg)
 
 ## 📥 Download Dataset
 
@@ -73,6 +70,10 @@ cd IAS-26-ESC-0712
 
 **Dataset classes (7 defect types):** `burning`, `crack`, `deformity`, `dirt`, `oil`, `peeling`, `rusty`
 
+## 📈 Dataset Class Distribution
+
+![Class Distribution](Figures/labels.jpg)
+
 ## 🔧 Environment
 
 ```bash
@@ -99,15 +100,4 @@ yolo detect val data=data/WTVD/extreme_data.yaml model=runs/detect/train/weights
 - **Code:** **MIT License**
 - **Dataset:** **CC BY 4.0** — The datasets and data files are made available under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
-## � Citation
 
-If this work is helpful for your research, please cite:
-
-```bibtex
-@article{li2026vision,
-  title={A Vision-Based UAV Inspection System for Wind Turbine Blades in Offshore Extreme Environments},
-  author={Li, Wei and Li, Shenwang and Zhou, Yuyang and Zhang, Yunwei and Deng, Junlong and Zhang, Zhenkang and Liu, Li and Wu, Thomas},
-  journal={IEEE IAS Publications},
-  year={2026}
-}
-```
