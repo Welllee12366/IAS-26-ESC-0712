@@ -34,6 +34,15 @@ This work proposes a unified framework that integrates:
 > - Only the **validation set** is provided here for reviewer access.  
 > - Full dataset (training + test splits) will be released upon paper publication.
 
+## 📥 Download Dataset
+
+Clone this repository to download the validation set locally:
+
+```bash
+git clone https://github.com/Welllee12366/IAS-26-ESC-0712.git
+cd IAS-26-ESC-0712
+```
+
 ## 📊 Framework Overview
 
 ![Framework](Figures/graph.png)
