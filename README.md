@@ -38,7 +38,9 @@ This work proposes a unified framework that integrates:
 
 ![Framework](Figures/graph.png)
 
-# Quick Start
+## 📈 Dataset Class Distribution
+
+![Class Distribution](Figures/labels.jpg)
 
 ## 📥 Download Dataset
 
@@ -48,7 +50,6 @@ Clone this repository to download the validation set locally:
 git clone https://github.com/Welllee12366/IAS-26-ESC-0712.git
 cd IAS-26-ESC-0712
 ```
-
 
 ## 📁 Project Structure
 
