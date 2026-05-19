@@ -30,8 +30,8 @@ This work proposes a unified framework that integrates:
 
 > **This paper is currently under peer review (IEEE IAS Publications).**  
 > - Code will be released publicly after paper acceptance.  
-> - Only the **validation set** is provided here for reviewer access.  
-> - Full dataset (training + test splits) will be released upon paper publication.
+> - Full dataset (training + validation + test splits) is provided for reviewer access.  
+> - Full dataset will be released publicly upon paper publication.
 
 
 ## 📊 Framework Overview
@@ -41,7 +41,7 @@ This work proposes a unified framework that integrates:
 
 ## 📥 Download Dataset
 
-Clone this repository to download the validation set locally:
+Clone this repository to download the full dataset locally:
 
 ```bash
 git clone https://github.com/Welllee12366/IAS-26-ESC-0712.git
@@ -53,14 +53,28 @@ cd IAS-26-ESC-0712
 ```
 .
 ├── data/
-│   └── WTVD/               # Wind Turbine Vision Dataset (val set only — see Notice)
-│       ├── extreme/        # Extreme environment subset (val)
-│       │   ├── images/
-│       │   ├── labels/
+│   └── WTVD/               # Wind Turbine Vision Dataset (WTVD)
+│       ├── extreme/       # Extreme environment subset
+│       │   ├── train/      #   - train split
+│       │   │   ├── images/
+│       │   │   └── labels/
+│       │   ├── val/       #   - val split
+│       │   │   ├── images/
+│       │   │   └── labels/
+│       │   ├── test/      #   - test split
+│       │   │   ├── images/
+│       │   │   └── labels/
 │       │   └── extreme_data.yaml
-│       └── original/       # Original conditions subset (val)
-│           ├── images/
-│           ├── labels/
+│       └── original/       # Original conditions subset
+│           ├── train/      #   - train split
+│           │   ├── images/
+│           │   └── labels/
+│           ├── val/       #   - val split
+│           │   ├── images/
+│           │   └── labels/
+│           ├── test/      #   - test split
+│           │   ├── images/
+│           │   └── labels/
 │           └── original_data.yaml
 ├── Figures/
 │   ├── graph.png           # Visualization
