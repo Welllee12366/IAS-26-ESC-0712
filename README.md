@@ -63,16 +63,17 @@ cd IAS-26-ESC-0712
 │           ├── labels/
 │           └── original_data.yaml
 ├── Figures/
-│   └── graph.png           # Visualization
+│   ├── graph.png           # Visualization
+│   └── labels.jpg          # Class distribution
 ├── .gitignore
 └── LICENSE
 ```
 
-**Dataset classes (7 defect types):** `burning`, `crack`, `deformity`, `dirt`, `oil`, `peeling`, `rusty`
-
 ## 📈 Dataset Class Distribution
 
-![Class Distribution](Figures/labels.jpg)
+**Classes (7 defect types):** `burning`, `crack`, `deformity`, `dirt`, `oil`, `peeling`, `rusty`
+
+<img src="Figures/labels.jpg" width="600"/>
 
 ## 🔧 Environment
 
