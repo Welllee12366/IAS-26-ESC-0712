@@ -73,7 +73,7 @@ cd IAS-26-ESC-0712
 
 **Classes (7 defect types):** `burning`, `crack`, `deformity`, `dirt`, `oil`, `peeling`, `rusty`
 
-<img src="Figures/labels.jpg" width="600"/>
+<img src="Figures/labels.jpg" width="600" style="display:block;margin-left:auto;margin-right:auto"/>
 
 ## 🔧 Environment
 
