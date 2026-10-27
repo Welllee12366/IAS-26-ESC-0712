@@ -113,7 +113,8 @@ distribution is 55.6 % > 96², 39.3 % in 32²–96², 4.8 % in 16²–32² and 0
 
 Every entry is a mean ± sample standard deviation over seeds 0, 1 and 2, trained with an identical
 recipe: 400 epochs, batch 16, 640×640, SGD (lr 0.01, momentum 0.937, weight decay 0.0005), early
-stopping at patience 100, AMP.
+stopping at patience 100, AMP. The three rows marked † are the exception — one run each; see the note
+after Table 2.
 
 ### 1 · Main comparison, clean test split (177 images)
 
