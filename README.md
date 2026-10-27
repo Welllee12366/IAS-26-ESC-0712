@@ -210,15 +210,17 @@ This is why every number in this repository is measured on the re-clustered spli
 ### 6 · Failure-mode decomposition (clean-trained baseline)
 
 Each of the 392 annotated boxes falls into exactly one bin. Operating threshold 0.25, second pass at
-0.001 to separate "low confidence" from "never represented".
+0.001 to separate "low confidence" from "never represented". `near miss` counts boxes localised to
+0.1–0.5 IoU (detected, but not well enough to count); `far FP` counts confident detections that landed
+on the wrong region entirely.
 
-| condition | TP | wrong class | class overlap | loc. 0.1–0.5 IoU | below threshold | invisible |
+| condition | TP | near miss (0.1–0.5 IoU) | wrong region (far FP) | wrong class | below threshold | invisible |
 |---|---|---|---|---|---|---|
-| clean | 49.2 % | 0.8 % | 1.0 % | 24.5 % | 14.3 % | 5.9 % |
-| fog | 9.2 % | 0.8 % | 0.8 % | 6.1 % | 23.0 % | 57.4 % |
-| motion blur | 31.6 % | 1.0 % | 1.0 % | 16.6 % | 20.9 % | 23.5 % |
-| low light | 3.3 % | 0.8 % | 0.8 % | 2.3 % | 14.8 % | 77.8 % |
-| composite | 9.9 % | 0.3 % | 0.3 % | 6.9 % | 31.6 % | 49.0 % |
+| clean | 49.2 % | 24.5 % | 5.1 % | 1.0 % | 14.3 % | 5.9 % |
+| fog | 9.2 % | 6.1 % | 3.6 % | 0.8 % | 23.0 % | 57.4 % |
+| motion blur | 31.6 % | 16.6 % | 6.4 % | 1.0 % | 20.9 % | 23.5 % |
+| low light | 3.3 % | 2.3 % | 1.0 % | 0.8 % | 14.8 % | 77.8 % |
+| composite | 9.9 % | 6.9 % | 2.3 % | 0.3 % | 31.6 % | 49.0 % |
 
 Under clean conditions the dominant losses are **localization and confidence**, not invisibility;
 complete invisibility only dominates under fog and low light. Per-condition calibration (ECE) is
