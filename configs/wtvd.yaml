@@ -1,0 +1,17 @@
+# WTVD -- packaged exactly as used for training and evaluation.
+# Paths are relative to this file, so the folder can be moved anywhere.
+#
+#   train : WTVD_clean/all/train   3577 images  (1425 source clusters,
+#           augmented exports retained)
+#   val   : WTVD_clean/all/val      444 images  ( 179 source clusters)
+#   test  : WTVD_clean/dedup/test   177 images  ( 177 source clusters,
+#           exactly one image per cluster)
+#
+# No source photograph occurs in more than one split. Verified.
+
+train: train/images
+val: val/images
+test: test/images
+
+nc: 7
+names: ['burning', 'crack', 'deformity', 'dirt', 'oil', 'peeling', 'rusty']

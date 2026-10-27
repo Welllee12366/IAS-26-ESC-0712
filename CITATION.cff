@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+message: "If you use this code or the Extreme-WTVD benchmark, please cite the paper below."
+title: "A Vision-Based UAV Inspection System for Wind Turbine Defect Detection under Adverse Imaging Conditions"
+abstract: >-
+  A UAV-based wind turbine inspection framework that combines diffusion-based
+  adverse-environment data synthesis, a Feature Calibration Module (FCM), and a
+  Multi-Scale Feature Aggregation (MSFA) module. The release includes the
+  construction scripts for the Extreme-WTVD benchmark, the leakage-free WTVD
+  re-split, all detector baselines, and the machine-readable results behind
+  every table in the paper.
+type: software
+license: MIT
+repository-code: "https://github.com/Welllee12366/IAS-26-ESC-0712"
+keywords:
+  - wind turbine inspection
+  - defect detection
+  - UAV
+  - adverse imaging conditions
+  - diffusion model
+  - domain adaptation
+  - multi-scale feature aggregation
+authors:
+  - family-names: Li
+    given-names: Wei
+    affiliation: "Guangxi University; Guangxi Academy of Artificial Intelligence"
+  - family-names: Li
+    given-names: Shenwang
+    affiliation: "Guangxi University"
+    email: lishenwang@gxu.edu.cn
+  - family-names: Su
+    given-names: Qiuren
+    affiliation: "Guangxi Vocational University of Agriculture"
+  - family-names: Zhou
+    given-names: Yuyang
+    affiliation: "Guangxi University"
+  - family-names: Zhang
+    given-names: Yunwei
+    affiliation: "Guangxi University"
+  - family-names: Deng
+    given-names: Junlong
+    affiliation: "Guangxi University"
+  - family-names: Zhang
+    given-names: Zhenkang
+    affiliation: "Guangxi University"
+  - family-names: Liu
+    given-names: Li
+    affiliation: "Guangxi University"
+  - family-names: Wu
+    given-names: Thomas Xinzhang
+    affiliation: "Shanghai Jiao Tong University"
+version: "1.0.0"
+date-released: "2026-10-27"

@@ -1,0 +1,29 @@
+{
+  "output": "datasets/WTVD",
+  "splits": {
+    "train": {
+      "images": 3577,
+      "clusters": 1425
+    },
+    "val": {
+      "images": 444,
+      "clusters": 179
+    },
+    "test": {
+      "images": 177,
+      "clusters": 177
+    }
+  },
+  "classes": [
+    "burning",
+    "crack",
+    "deformity",
+    "dirt",
+    "oil",
+    "peeling",
+    "rusty"
+  ],
+  "cross_split_byte_identical_pairs": 0,
+  "malformed_labels": 0,
+  "total_images": 4198
+}

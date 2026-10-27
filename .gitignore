@@ -1,16 +1,57 @@
-# Byte-compiled / optimized / DLL files
+# ---- datasets: distributed via Baidu Netdisk, never versioned ----
+datasets/
+dist/
+*.zip
+*.tar.gz
+
+# =====================================================================
+# UNDER REVIEW: source code, manuscript source and model weights must
+# not be published before acceptance. Remove these guards only when the
+# paper is accepted and the code release is intentional.
+# =====================================================================
+code/
+papers/
+paper/
+src/
+manuscript/
+*.tex
+*.bib
+*.cls
+*.bbl
+*.sty
+
+# ---- checkpoints: never versioned ----
+weights/
+runs/
+*.pt
+*.pth
+*.onnx
+*.engine
+*.ckpt
+
+# ---- generated imagery (never versioned) ----
+*.png
+*.jpg
+*.jpeg
+
+# ---- LaTeX build artefacts ----
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.toc
+
+# ---- python ----
 __pycache__/
 *.py[cod]
 *$py.class
-
-# C extensions
 *.so
-
-# Distribution / packaging
 .Python
 build/
 develop-eggs/
-dist/
 downloads/
 eggs/
 .eggs/
@@ -23,12 +64,10 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-
-# PyInstaller
 *.manifest
 *.spec
 
-# Environments
+# ---- environments ----
 .env
 .venv
 env/
@@ -36,31 +75,29 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# pyenv
 .python-version
 
-# IDEs
+# ---- notebooks / IDEs ----
+.ipynb_checkpoints/
 .idea/
 .vscode/
 *.swp
 *.swo
 *~
 
-# OS
+# ---- OS ----
 .DS_Store
 Thumbs.db
+desktop.ini
 
-# Logs
+# ---- logs ----
 *.log
 
-# Model checkpoints
-*.pth
-*.pt
-*.onnx
-*.h5
-*.ckpt
-logs/
+# ---- keep the machine-readable results the paper reports ----
+!results/*.json
+!results/*.txt
+!results/*.csv
+!results/SHA256SUMS.txt
+
+# ---- agent workspace memory (local only) ----
+.workbuddy/

@@ -1,0 +1,39 @@
+# Extreme-WTVD: synthetic adverse-imaging benchmark
+# Generated from datasets/WTVD_split, whose splits are leakage-free.
+#
+#   fog       HazeGen (Wang et al., CVPR 2025), w=0.85, 50 steps
+#   motion    linear motion PSF, 5-14 px
+#   low       gamma 1.3-1.9 attenuation + sensor noise
+#   composite fog -> low-light -> motion blur
+#   combined  all four families pooled (the protocol the paper reports)
+#
+# Labels are inherited from the clean source image; both the generative
+# and the physical operators preserve scene geometry. See README.md.
+
+combined:
+  train: combined/train/images
+  val: combined/val/images
+  test: combined/test/images
+
+fog:
+  train: fog/train/images
+  val: fog/val/images
+  test: fog/test/images
+
+motion:
+  train: motion/train/images
+  val: motion/val/images
+  test: motion/test/images
+
+low:
+  train: low/train/images
+  val: low/val/images
+  test: low/test/images
+
+composite:
+  train: composite/train/images
+  val: composite/val/images
+  test: composite/test/images
+
+nc: 7
+names: ['burning', 'crack', 'deformity', 'dirt', 'oil', 'peeling', 'rusty']
