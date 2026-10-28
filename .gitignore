@@ -5,11 +5,14 @@ dist/
 *.tar.gz
 
 # =====================================================================
-# UNDER REVIEW: source code, manuscript source and model weights must
-# not be published before acceptance. Remove these guards only when the
-# paper is accepted and the code release is intentional.
+# UNDER REVIEW: the PROPOSED METHOD's code, manuscript source and model
+# weights must not be published before acceptance. Baseline training /
+# evaluation code in baselines/ is intentionally published; everything
+# below stays blocked until the paper is accepted.
 # =====================================================================
 code/
+framework/
+modules/
 papers/
 paper/
 src/

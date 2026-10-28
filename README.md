@@ -17,12 +17,12 @@ Companion repository of the paper
 ## Release policy
 
 **This paper is under peer review.** The source code of the proposed method and the manuscript
-  
 source files are **not** in this repository; both will be released upon acceptance.
 
 | item                                     | status                                                                |
 | ---------------------------------------- | --------------------------------------------------------------------- |
 | Results reported in the paper            | ✅ **in this README**                                                  |
+| **Baseline training / evaluation code**  | ✅ **in `baselines/`**                                                 |
 | Dataset configuration files (`configs/`) | ✅ in this repository                                                  |
 | WTVD / Extreme-WTVD datasets             | ✅ via the links below                                                 |
 | Trained model weights                    | ✅ via the links below                                                 |
@@ -65,24 +65,18 @@ Unzip the archives so that the layout is:
 
 ## How to train
 
-Install [Ultralytics](https://docs.ultralytics.com/) and train any detector with the configuration
-  
-files in [`configs/`](configs):
+The comparison-method code ships in [`baselines/`](baselines) — see
+[`baselines/README.md`](baselines/README.md) for the full usage. In short:
 
 ```bash
 pip install ultralytics==8.4.160
+cd baselines
+python train_detector.py --model yolo11n --seed 0      # any of the six stock detectors
 ```
 
-```python
-from ultralytics import YOLO
-
-m = YOLO("yolo11n.pt")
-m.train(data="configs/wtvd.yaml", epochs=400, batch=16, imgsz=640,
-        optimizer="SGD", lr0=0.01, momentum=0.937, weight_decay=0.0005,
-        patience=100, amp=True, seed=0)
-```
-
-All baselines in the tables below use this identical recipe.
+YOLO-RAW is trained with `train_yoloraw.py`; DANN / Advent with
+`da/train_da.py` (starting from the converged clean-trained YOLO 11n).
+All use the same recipe, so the tables below are reproducible.
 
 ## How to validate
 
@@ -149,6 +143,14 @@ benchmark is designed to expose.
 
 ```text
 .
+├── baselines/                    # training / evaluation code for the comparison methods
+│   ├── train_detector.py         # stock YOLO v5/v8/11/12/26n + RT-DETR (paper recipe)
+│   ├── config.py, _paths.py      # shared recipe and path resolution
+│   ├── train_yoloraw.py, yoloraw_model.py, yoloraw_modules.py, yolorawn.yaml
+│   ├── da/
+│   │   ├── train_da.py           # DANN / Advent domain adaptation
+│   │   └── eval_da.py            # DA checkpoint evaluation
+│   └── README.md                 # usage for all of the above
 ├── configs/
 │   ├── wtvd.yaml                 # WTVD split descriptor
 │   ├── extreme_wtvd.yaml         # four degradation families + combined pool
@@ -158,6 +160,8 @@ benchmark is designed to expose.
 ├── datasets.LICENSE              # CC BY 4.0 (datasets)
 └── README.md
 ```
+
+The code of the **proposed method** is not part of this repository; see the release policy.
 
 ## Citation
 
