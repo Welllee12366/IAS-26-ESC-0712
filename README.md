@@ -27,7 +27,6 @@ source files are **not** in this repository; both will be released upon acceptan
 | WTVD / Extreme-WTVD datasets             | ✅ via the links below                                                 |
 | Trained model weights                    | ✅ via the links below                                                 |
 | **Source code of the proposed method**   | ⏳ upon acceptance                                                     |
-| **Manuscript source files**              | ❌ not in this repository (distributed only through the review system) |
 
 ## Datasets
 
