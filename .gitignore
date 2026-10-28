@@ -90,14 +90,10 @@ venv.bak/
 Thumbs.db
 desktop.ini
 
-# ---- logs ----
+# ---- results / evaluation outputs (results live in the README only) ----
+results/
+runs/
 *.log
-
-# ---- keep the machine-readable results the paper reports ----
-!results/*.json
-!results/*.txt
-!results/*.csv
-!results/SHA256SUMS.txt
 
 # ---- agent workspace memory (local only) ----
 .workbuddy/
