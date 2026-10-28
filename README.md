@@ -151,6 +151,11 @@ benchmark is designed to expose.
 │   │   ├── train_da.py           # DANN / Advent domain adaptation
 │   │   └── eval_da.py            # DA checkpoint evaluation
 │   └── README.md                 # usage for all of the above
+├── dataset_tools/                # benchmark fidelity / integrity measurements
+│   ├── measure_fid_kid.py        # FID + KID, clean vs. each degraded family
+│   ├── defect_feature_distance.py# paired defect-box feature distance
+│   ├── verify_fog_box_ssim.py    # in-box SSIM under fog
+│   └── README.md
 ├── configs/
 │   ├── wtvd.yaml                 # WTVD split descriptor
 │   ├── extreme_wtvd.yaml         # four degradation families + combined pool
