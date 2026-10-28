@@ -89,16 +89,25 @@ yolo detect val model=runs/train/weights/best.pt data=configs/extreme_wtvd.yaml
 
 ## Trained models
 
-| model | weights |
+All weights live in the shared Baidu Netdisk folder
+[`checkpoints`](https://pan.baidu.com/s/1-nO904Plh0wPV4nZRXrPRg?pwd=tntv) (code: `tntv`);
+each row below maps to one archive inside it. Weights are `best.pt` per training run,
+named `<model>_wtvd_seed<N>_best.pt`.
+
+| model | archive in the folder |
 |---|---|
-| YOLO v5n (clean-trained) | [Baidu Netdisk](https://pan.baidu.com/s/xxxxxxxxxxxxxx) (code: `xxxx`) |
-| YOLO v8n (clean-trained) | [Baidu Netdisk](https://pan.baidu.com/s/xxxxxxxxxxxxxx) (code: `xxxx`) |
-| YOLO 11n (clean-trained) | [Baidu Netdisk](https://pan.baidu.com/s/xxxxxxxxxxxxxx) (code: `xxxx`) |
-| YOLO 12n (clean-trained) | [Baidu Netdisk](https://pan.baidu.com/s/xxxxxxxxxxxxxx) (code: `xxxx`) |
-| YOLO 26n (clean-trained) | [Baidu Netdisk](https://pan.baidu.com/s/xxxxxxxxxxxxxx) (code: `xxxx`) |
-| RT-DETR (clean-trained) | [Baidu Netdisk](https://pan.baidu.com/s/xxxxxxxxxxxxxx) (code: `xxxx`) |
-| DANN / Advent / YOLO-RAW | [Baidu Netdisk](https://pan.baidu.com/s/xxxxxxxxxxxxxx) (code: `xxxx`) |
+| YOLO v5n (clean-trained) | `wtvd-baseline-yolov5n-3seeds.zip` |
+| YOLO v8n (clean-trained) | `wtvd-baseline-yolov8n-3seeds.zip` |
+| YOLO 11n (clean-trained) | `wtvd-baseline-yolo11n-3seeds.zip` |
+| YOLO 12n (clean-trained) | `wtvd-baseline-yolo12n-3seeds.zip` |
+| YOLO 26n (clean-trained) | `wtvd-baseline-yolo26n-3seeds.zip` |
+| RT-DETR (clean-trained) | `wtvd-baseline-rtdetr-l-3seeds.zip` |
+| DANN / Advent / YOLO-RAW | `wtvd-baseline-dann-advent-yoloraw.zip` |
 | Proposed model (Ours) | released upon acceptance |
+
+The stock-detector archives each contain seeds 0/1/2; the DANN / Advent / YOLO-RAW archive
+contains one checkpoint per method (seed 0). These weights reproduce both result tables:
+Table 1 evaluates them on the clean split and Table 2 on the Extreme-WTVD pool.
 
 ## Results
 
