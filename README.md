@@ -43,8 +43,24 @@ Unzip the archives so that the layout is:
 ```text
 .
 ├── datasets/
-│   ├── WTVD/            # train/ val/ test/ + data.yaml
-│   └── Extreme-WTVD/    # fog/ motion/ low/ composite/ combined/ + data.yaml
+│   ├── WTVD/                        # clean, leakage-free
+│   │   ├── train/
+│   │   │   ├── images/              # 3577
+│   │   │   └── labels/
+│   │   ├── val/                     # images/ labels/ — 444
+│   │   ├── test/                    # images/ labels/ — 177
+│   │   └── wtvd.yaml
+│   └── Extreme-WTVD/                # synthetic degradation benchmark
+│       ├── fog/
+│       │   ├── train/
+│       │   │   ├── images/          # 3577
+│       │   │   └── labels/
+│       │   └── val/                 # images/ labels/ — 444
+│       ├── motion/                  # train/ val/ test/ — same structure
+│       ├── low/                     # idem
+│       ├── composite/               # idem
+│       ├── combined/                # all four families pooled — 14308 / 1776 / 708
+│       └── extreme_wtvd.yaml
 └── configs/
 ```
 
