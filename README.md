@@ -24,16 +24,16 @@ source files are **not** in this repository; both will be released upon acceptan
 | Results reported in the paper            | ✅ **in this README**                                                  |
 | **Baseline training / evaluation code**  | ✅ **in `baselines/`**                                                 |
 | Dataset configuration files (`configs/`) | ✅ in this repository                                                  |
-| WTVD / Extreme-WTVD datasets             | ✅ via the links below                                                 |
+| WTVD / Extreme-WTVD datasets             | ⏳ upon acceptance                                                     |
 | Trained model weights                    | ✅ via the links below                                                 |
 | **Source code of the proposed method**   | ⏳ upon acceptance                                                     |
 
 ## Datasets
 
-| dataset                                                      | splits (train / val / test)   | images | download                                                               |
-| ------------------------------------------------------------ | ----------------------------- | ------ | ---------------------------------------------------------------------- |
-| **WTVD** (clean)                                             | 3577 / 444 / 177              | 4198   | [Baidu Netdisk](https://pan.baidu.com/s/xxxxxxxxxxxxxx) (code: `xxxx`) |
-| **Extreme-WTVD** (fog / motion blur / low light / composite) | 14308 / 1776 / 708 per family | 16792  | [Baidu Netdisk](https://pan.baidu.com/s/xxxxxxxxxxxxxx) (code: `xxxx`) |
+| dataset                                                      | splits (train / val / test)   | images | download              |
+| ------------------------------------------------------------ | ----------------------------- | ------ | ---------------------- |
+| **WTVD** (clean)                                             | 3577 / 444 / 177              | 4198   | ⏳ upon acceptance     |
+| **Extreme-WTVD** (fog / motion blur / low light / composite) | 14308 / 1776 / 708 per family | 16792  | ⏳ upon acceptance     |
 
 7 defect classes: `burning, crack, deformity, dirt, oil, peeling, rusty`.
 
